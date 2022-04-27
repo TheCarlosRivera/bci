@@ -12,15 +12,17 @@
 	<link rel="stylesheet" type="text/css" href="css/normalizer.css">
 	<link rel="preload" href="css/style.css" as="style">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<title>Inicio</title>
 </head>
 <body>
 
-	<header class="header">
+	<header id="header" class="header">
 		<div class="header__logo">
 			<img class="header__logo_img" src="img/logo.png">
+			<span id="btn_menu" class="icon_menu material-icons material-icons-outlined">menu</span>
 		</div>
-		<nav class="nav">
+		<nav id="nav" class="nav">
 			<a class="nav__enlace" href="">Servicio al cliente</a>
 			<a class="nav__enlace" href="">Beneficios</a>
 			<a class="nav__enlace" href="">Sucursales</a>
@@ -30,19 +32,19 @@
 		<section class="slogan">
 			<div class="slogan__imagenes">
 				<img class="slogan__img layer_1" src="img/layer_1.png" alt="imagen layer">
-				<img class="slogan__img layer" src="img/layer.png" alt="imagen layer">
+				<img class="slogan__img layer" src="img/layer_logo.png" alt="imagen layer">
 				<img class="slogan__img layer_2" src="img/layer_2.png" alt="imagen layer">
 			</div>
 			<div class="botones">
-				<a class="botones__enlace" href="">¿Qué puedo hacer?</a>			
-				<a class="botones__enlace" href="">Recomendaciones vacaciones</a>	
-				<a class="botones__enlace" href="">Beneficios</a>	
+				<a class="botones__enlace color_rojo" href="">¿Qué puedo hacer?</a>			
+				<a class="botones__enlace color_azul" href="">Recomendaciones vacaciones</a>	
+				<a class="botones__enlace color_verde" href="">Beneficios</a>	
 			</div>
 		</section>
 
 		<section class="info__app">
 			<div>
-				<h2 class="info__app_titulo title"><span>Descarga la App BCI Móvil</span> y vive la experiencia de llevar tu banco a todas partes.</h2>
+				<h2 class="info__app_titulo title"><span class="resaltar">Descarga la App BCI Móvil</span> y vive la experiencia de llevar tu banco a todas partes.</h2>
 				<div class="info__app_iconos">
 					<div class="info__app_icono">
 						<span class="info__app_ico material-icons material-icons-outlined">savings</span>
@@ -51,7 +53,7 @@
 
 					<div class="info__app_icono">
 						<span class="info__app_ico material-icons material-icons-outlined">sync_alt</span>
-						<p class="info__app_text">Transferecnia</p>
+						<p class="info__app_text">Transferencia</p>
 					</div>
 
 					<div class="info__app_icono">
@@ -86,19 +88,19 @@
 
 				</div>
 			</div>
-			<div>
-				<img src="img/layer_3.png">
+			<div class="info__app_cont">
+				<img class="info__app_img" src="img/layer_3.png">
 			</div>
 		</section>
 
 
 		<section class="inform">
-			<h2 class="inform__titulo title">¡Estas vacaciones cúidate del Skimming o Clonación de Tarjetas!</h2>
+			<h3 class="inform__titulo title">¡Estas vacaciones cúidate del Skimming o Clonación de Tarjetas!</h3>
 			<div class="inform__contenedor">
 				<div class="infor__detalle">
-					<div class="infor__detalle_ct">
+					<div class="infor__detalle_cont">
 						<span class="infor__detalle_ico material-icons material-icons-outlined">credit_card</span>
-						<h3 class="infor__detalle_title">Consejo 1</h3>					
+						<h4 class="infor__detalle_title">Consejo 1</h4>					
 					</div>
 					<div class="infor__detalle_text">
 						<p>Realiza directamente tus transacciones o mantén tu tarjeta a la vista todo el tiempo.</p>
@@ -106,9 +108,9 @@
 				</div>			
 
 				<div class="infor__detalle">
-					<div class="infor__detalle_ct">
+					<div class="infor__detalle_cont">
 						<span class="infor__detalle_ico material-icons material-icons-outlined">pan_tool</span>
-						<h3 class="infor__detalle_title">Consejo 2</h3>					
+						<h4 class="infor__detalle_title">Consejo 2</h4>					
 					</div>
 					<div class="infor__detalle_text">
 						<p>Cuando uses cajeros automáticos cubre con tu mano la contraseña.</p>
@@ -116,9 +118,9 @@
 				</div>
 
 				<div class="infor__detalle">
-					<div class="infor__detalle_ct">
+					<div class="infor__detalle_cont">
 						<span class="infor__detalle_ico material-icons material-icons-outlined">no_photography</span>
-						<h3 class="infor__detalle_title">Consejo 3</h3>					
+						<h4 class="infor__detalle_title">Consejo 3</h4>					
 					</div>
 					<div class="infor__detalle_text">
 						<p>Nunca permitas que fotografíen tus tarjetas.</p>
@@ -126,9 +128,9 @@
 				</div>
 
 				<div class="infor__detalle">
-					<div class="infor__detalle_ct">
+					<div class="infor__detalle_cont">
 						<span class="infor__detalle_ico material-icons material-icons-outlined">voice_over_off</span>
-						<h3 class="infor__detalle_title">Consejo 4</h3>					
+						<h4 class="infor__detalle_title">Consejo 4</h4>					
 					</div>
 					<div class="infor__detalle_text">
 						<p>No des nunca tu clave en alta voz.</p>
